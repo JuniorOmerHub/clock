@@ -1,0 +1,71 @@
+body {
+    /* Görseldeki gibi koyu gri/siyah arkaplan */
+    background-color: #222;
+    /* Metinleri sayfada dikey ve yatay olarak ortalamak için */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Sayfanın tamamını kaplasın */
+    min-height: 100vh;
+    margin: 0;
+    /* Fontu görseldekine benzer, kalın ve serif olmayan bir font seçelim */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ff9933; /* Turuncu tonu */
+    text-align: center;
+}
+
+.container {
+    /* Metinlerin arasına biraz boşluk bırakalım */
+    padding: 20px;
+}
+
+/* F11 Bilgisi */
+#f11-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.8em;
+    color: #ccc; /* Daha soluk bir renk */
+    background-color: #000000a0; /* Hafif saydam siyah arkaplan */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.key-press {
+    font-weight: bold;
+    color: white;
+}
+
+/* KODLUYORUZ Başlığı */
+#kodluyoruz-header {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff9933; /* Ana turuncu renk */
+    letter-spacing: 5px;
+}
+
+/* Hoş geldiniz mesajı */
+#welcome-message {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Saat ve Gün */
+#current-time {
+    font-size: 3.5em; /* En belirgin eleman */
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(255, 153, 51, 0.5); /* Hafif parlaklık efekti */
+}
+
+/* Alt bilgi metni */
+#info-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Kalın (bold) metinleri alt bilgide de turuncu yapmak için */
+#info-text strong {
+    color: #ff9933;
+}
